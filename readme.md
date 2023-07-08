@@ -20,4 +20,4 @@ El margin es la distancia entre elementos hermanos
 Si quiero poner dos elementos hermanos uno arriba del otro
 y que tenga una separacion lo hago asi: `.flex.flex-col.gap-4`
 
-test2
+gaaaa
