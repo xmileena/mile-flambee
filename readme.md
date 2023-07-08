@@ -1,10 +1,9 @@
 # Guia
 ## instalar pug
 `npm i -g pug`
-`npm i -g pug`
+`npm i -g pug-lint`
 
-## compilar pug-lint
-
+## compilar pug
 
 `pug -w ./pug/index.pug -o ./ --pretty`
 
