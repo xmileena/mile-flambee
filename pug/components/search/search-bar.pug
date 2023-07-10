@@ -1,21 +1,39 @@
-div(class="flex flex-col max-w-screen-lg mx-auto my-10")
-  div(class="flex flex-row")
-    div(class="flex flex-col relative")
-      input(id="input1" type="text" class="border-2 border-gray-300 p-2 w-full" placeholder="Input 1")
-      label(for="input1" class="absolute top-0 left-0") enfermedad
-    div(class="flex flex-col relative")
-      input(id="input2" type="text" class="border-2 border-gray-300 p-2 w-full" placeholder="Input 2")
-      label(for="input2" class="absolute top-0 left-0") Input 2
-    div(class="flex flex-col relative")
-      input(id="input3" type="text" class="border-2 border-gray-300 p-2 w-full" placeholder="Input 3")
-      label(for="input3" class="absolute top-0 left-0") Input 3
-  div(class="flex flex-row")
-    div(class="flex flex-col relative")
-      select(id="dropdown" class="border-2 border-gray-300 p-2 w-full")
-        option(value="1") Dropdown 1
-        option(value="2") Dropdown 2
-        option(value="3") Dropdown 3
-      label(for="dropdown" class="absolute top-0 left-0") Dropdown
-    div(class="flex flex-col relative")
-      input(id="searchbar" type="text" class="border-2 border-gray-300 p-2 w-full" placeholder="Searchbar")
-      label(for="searchbar" class="absolute top-0 left-0") Searchbar
+form.mx-auto(action="/search?",method="get")
+  div.flex.bg-white.shadow-md.rounded-full.mx-auto.p-4
+
+    //-condition
+    div.flex.flex-col.gap-1.border-r-2.border-gray-200.px-4
+      label Condition 
+      input.border-transparent(placeholder="Type condition",class="focus:outline-none",name="condition")
+
+    //-location
+    div.flex.flex-col.gap-1.border-r-2.border-gray-200.px-4
+      label Location 
+      div.flex
+        div.w-6.pt-1.mr-2
+          img(src="../../../assets/icons/gps-pointer.svg")
+        input.border-transparent(placeholder="Type condition",class="focus:outline-none",name="location")
+
+    //-distance
+    div.flex.flex-col.gap-1.border-r-2.border-gray-200.px-4
+      label Distance 
+      div.flex
+        input.border-transparent(placeholder="Type condition",class="focus:outline-none",name="distance")
+        div.w-4
+          img(src="../../../assets/icons/drop-down.svg")
+
+    //-age
+    div.flex.flex-col.gap-1.px-4
+      label Age 
+      input.border-transparent(placeholder="Type age",class="focus:outline-none",name="age")
+
+    //- button
+    button(class="h-14 w-[143px] flex justify-center items-center bg-warm500 bg-[#ffb600] rounded-full",type="submit")
+      div.w-4
+          img(src="../../../assets/icons/search.svg")
+
+  
+
+      
+
+ 

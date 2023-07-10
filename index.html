@@ -37,39 +37,39 @@
     <div class="container-xl flex flex-col gap-32 mx-auto padding-top-32 bg-[#bfdbfe]">
       <div class="py-16">
         <div class="m-8">
-          <h1 class="font-bold text-4xl text-center my-4 text-[#1557FF]">¡Bienvenido a mi proyecto Vanilla!!!!!!!</h1>
+          <h1 class="font-bold text-4xl text-center my-4 text-[#1557FF]">¡Bienvenido a mi proyecto Vanilla!!</h1>
+          <h2 class="text-2xl text-center my-4">busca ensallos</h2>
         </div>
         <div class="flex flex-col gap-8 mb-8">
-          <div class="flex flex-col max-w-screen-lg mx-auto my-10">
-            <div class="flex flex-row">
-              <div class="flex flex-col relative">
-                <input class="border-2 border-gray-300 p-2 w-full" id="input1" type="text" placeholder="Input 1">
-                <label class="absolute top-0 left-0" for="input1">enfermedad</label>
+          <form class="mx-auto" action="/search?" method="get">
+            <div class="flex bg-white shadow-md rounded-full mx-auto p-4">
+              <div class="flex flex-col gap-1 border-r-2 border-gray-200 px-4">
+                <label>Condition </label>
+                <input class="border-transparent focus:outline-none" placeholder="Type condition" name="condition">
               </div>
-              <div class="flex flex-col relative">
-                <input class="border-2 border-gray-300 p-2 w-full" id="input2" type="text" placeholder="Input 2">
-                <label class="absolute top-0 left-0" for="input2">Input 2</label>
+              <div class="flex flex-col gap-1 border-r-2 border-gray-200 px-4">
+                <label>Location </label>
+                <div class="flex">
+                  <div class="w-6 pt-1 mr-2"><img src="../../../assets/icons/gps-pointer.svg"></div>
+                  <input class="border-transparent focus:outline-none" placeholder="Type condition" name="location">
+                </div>
               </div>
-              <div class="flex flex-col relative">
-                <input class="border-2 border-gray-300 p-2 w-full" id="input3" type="text" placeholder="Input 3">
-                <label class="absolute top-0 left-0" for="input3">Input 3</label>
+              <div class="flex flex-col gap-1 border-r-2 border-gray-200 px-4">
+                <label>Distance </label>
+                <div class="flex">
+                  <input class="border-transparent focus:outline-none" placeholder="Type condition" name="distance">
+                  <div class="w-4"><img src="../../../assets/icons/drop-down.svg"></div>
+                </div>
               </div>
+              <div class="flex flex-col gap-1 px-4">
+                <label>Age </label>
+                <input class="border-transparent focus:outline-none" placeholder="Type age" name="age">
+              </div>
+              <button class="h-14 w-[143px] flex justify-center items-center bg-warm500 bg-[#ffb600] rounded-full" type="submit">
+                <div class="w-4"><img src="../../../assets/icons/search.svg"></div>
+              </button>
             </div>
-            <div class="flex flex-row">
-              <div class="flex flex-col relative">
-                <select class="border-2 border-gray-300 p-2 w-full" id="dropdown">
-                  <option value="1">Dropdown 1</option>
-                  <option value="2">Dropdown 2</option>
-                  <option value="3">Dropdown 3</option>
-                </select>
-                <label class="absolute top-0 left-0" for="dropdown">Dropdown</label>
-              </div>
-              <div class="flex flex-col relative">
-                <input class="border-2 border-gray-300 p-2 w-full" id="searchbar" type="text" placeholder="Searchbar">
-                <label class="absolute top-0 left-0" for="searchbar">Searchbar</label>
-              </div>
-            </div>
-          </div>
+          </form>
           <div class="flex gap-4 flex-wrap justify-center">
             <!-- Aquí puedes agregar contenido-->
             <div class="bg-gray-200 p-2 rounded-md">Contenido </div>
