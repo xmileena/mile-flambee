@@ -40,13 +40,35 @@
           <h1 class="font-bold text-4xl text-center my-4 text-[#1557FF]">¡Bienvenido a mi proyecto Vanilla!!!!!!!</h1>
         </div>
         <div class="flex flex-col gap-8 mb-8">
-          <div class="flex mx-8 md:mx-auto md:w-2/4">
-            <input class="w-full  border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" placeholder="Buscar">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600" type="submit">
-              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m-2.92-2.92a7.5 7.5 0 1 1-10.6-10.6 7.5 7.5 0 0 1 10.6 10.6z"></path>
-              </svg>
-            </button>
+          <div class="flex flex-col max-w-screen-lg mx-auto my-10">
+            <div class="flex flex-row">
+              <div class="flex flex-col relative">
+                <input class="border-2 border-gray-300 p-2 w-full" id="input1" type="text" placeholder="Input 1">
+                <label class="absolute top-0 left-0" for="input1">enfermedad</label>
+              </div>
+              <div class="flex flex-col relative">
+                <input class="border-2 border-gray-300 p-2 w-full" id="input2" type="text" placeholder="Input 2">
+                <label class="absolute top-0 left-0" for="input2">Input 2</label>
+              </div>
+              <div class="flex flex-col relative">
+                <input class="border-2 border-gray-300 p-2 w-full" id="input3" type="text" placeholder="Input 3">
+                <label class="absolute top-0 left-0" for="input3">Input 3</label>
+              </div>
+            </div>
+            <div class="flex flex-row">
+              <div class="flex flex-col relative">
+                <select class="border-2 border-gray-300 p-2 w-full" id="dropdown">
+                  <option value="1">Dropdown 1</option>
+                  <option value="2">Dropdown 2</option>
+                  <option value="3">Dropdown 3</option>
+                </select>
+                <label class="absolute top-0 left-0" for="dropdown">Dropdown</label>
+              </div>
+              <div class="flex flex-col relative">
+                <input class="border-2 border-gray-300 p-2 w-full" id="searchbar" type="text" placeholder="Searchbar">
+                <label class="absolute top-0 left-0" for="searchbar">Searchbar</label>
+              </div>
+            </div>
           </div>
           <div class="flex gap-4 flex-wrap justify-center">
             <!-- Aquí puedes agregar contenido-->
