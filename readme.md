@@ -31,6 +31,14 @@ y que tenga una separacion lo hago asi: `.flex.flex-col.gap-4`
 
 `git push` eso
 
+### Navegar por las ramas del git
+`git branch` te muestra en verde en que rama estas parada
+`git checkout nombre-de-la-rama` te moves a la rama especifica (ver nombre de ramas en el paso anterior)
+ejemplo: `git checkout nav`  `git checkout main`  `git checkout search-v1` `git checkout search-v2`
+
+ESCRIBIR `clear` para borrar la terminal
+
+
 # Importar fuentes descargadas
 
 ```css
